@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>お問い合わせ・資料請求｜有限会社まんてん.</title>
+<meta name="description" content="家づくりのご相談、資料請求、完成見学会のご予約はこちらから。TEL 086-436-8846（受付時間9:00〜18:00）">
+<link rel="icon" href="assets/img/logo.svg">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Shippori+Mincho:wght@400;500&family=Zen+Kaku+Gothic+New:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+<div class="loader" aria-hidden="true"><img src="assets/img/logo.svg" alt=""></div>
+<main>
+  <div class="page-mv">
+    <div class="wrap page-mv__head">
+      <p class="en">CONTACT</p>
+      <h1>お問い合わせ・資料請求</h1>
+      <p class="breadcrumb"><a href="index.html">トップ</a><span>›</span>お問い合わせ</p>
+    </div>
+  </div>
+
+  <section class="section" style="padding-top:60px">
+    <div class="wrap wrap--narrow">
+      <div class="reveal">
+        <p>家づくりのご相談、資料請求、完成見学会のご予約など、お気軽にお問い合わせください。</p>
+        <p class="small muted">お問い合わせいただいた内容は、3営業日以内にメールにてご返信いたします。返信がない場合は、お手数ですが再度送信いただくか、お電話（<a href="tel:0864368846">086-436-8846</a>／受付時間 9:00〜18:00）にてお問い合わせください。</p>
+      </div>
+
+      <form class="form mt-m reveal" id="contactForm" novalidate>
+        <div class="form__row">
+          <span class="label">お問い合わせの種類<span class="req">必須</span></span>
+          <div class="radios">
+            <label><input type="radio" name="type" value="まずは相談したい" required checked>まずは相談したい</label>
+            <label><input type="radio" name="type" value="資料請求">資料請求</label>
+            <label><input type="radio" name="type" value="見学会の予約">見学会の予約</label>
+            <label><input type="radio" name="type" value="その他">その他</label>
+          </div>
+        </div>
+        <div class="form__row"><label for="f-name">お名前<span class="req">必須</span></label><input type="text" id="f-name" name="name" required autocomplete="name" placeholder="例）倉敷 太郎"></div>
+        <div class="form__row"><label for="f-kana">ふりがな<span class="req">必須</span></label><input type="text" id="f-kana" name="kana" required placeholder="例）くらしき たろう"></div>
+        <div class="form__row"><label for="f-tel">TEL・携帯<span class="req">必須</span></label><input type="tel" id="f-tel" name="tel" required autocomplete="tel" placeholder="例）090-1234-5678"></div>
+        <div class="form__row"><label for="f-email">メールアドレス<span class="req">必須</span></label><input type="email" id="f-email" name="email" required autocomplete="email"></div>
+        <div class="form__row"><label for="f-email2">メールアドレス（確認）<span class="req">必須</span></label><input type="email" id="f-email2" name="email2" required autocomplete="off"></div>
+        <div class="form__row"><label for="f-zip">郵便番号</label><input type="text" id="f-zip" name="zip" autocomplete="postal-code" placeholder="例）713-8127" style="max-width:220px"></div>
+        <div class="form__row"><label for="f-addr">ご住所</label><input type="text" id="f-addr" name="address" autocomplete="street-address"></div>
+        <div class="form__row"><label for="f-msg">ご相談内容</label><textarea id="f-msg" name="message" placeholder="ご希望の見学会の日時、資料のお届け先など、ご自由にご記入ください。"></textarea></div>
+        <div class="form__submit"><button type="submit" class="btn btn--fill">入力内容を送信する</button></div>
+      </form>
+      <div class="form__msg" id="formMsg">お問い合わせありがとうございます。<br>3営業日以内に担当者よりご連絡いたします。</div>
+    </div>
+  </section>
+</main>
+<script src="assets/js/main.js"></script>
+</body>
+</html>
